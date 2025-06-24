@@ -1,0 +1,89 @@
+
+body{
+    transition: 0.1ms;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+body.webp-supported{
+    background-image: url("/images/background.webp");
+}
+
+.img-logo{
+    position: fixed;
+    position: absolute; 
+    top: 0;
+    left: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+.nav-menu{
+    display: flex;
+    margin: 10px 0px 0px 50px;
+    padding: 10px;
+    background-color: #7a1b1b;
+    gap: 20px;
+    position: fixed;
+    align-items: center;
+    z-index: 1000;
+}
+.nav-menu > a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.seccion-init-ses{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.seccion-init-ses > input{
+    padding: 5px;
+    margin: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.pages{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.home{
+    flex-direction: column;
+}
+
+.page-children {
+      height: 100vh;
+      display: flex;    
+      justify-content: center;  /* Centra horizontalmente */
+      align-items: center;      /* Centra verticalmente */
+      scroll-snap-align: start;
+      color: white;
+}
+.tit-page{
+    font-weight: bold;
+}
+.seccion-data{
+    display:-ms-grid;
+    background-color: rgb(198, 197, 197);
+    color: black;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+
+.products{
+    display: grid;
+}
